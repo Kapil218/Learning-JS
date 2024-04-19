@@ -31,3 +31,21 @@ let state;
 
 console.log(typeof undefined); // undefined
 console.log(typeof null); // object
+
+
+//*******  Memory ********
+// 1. Stack , 2. Heap
+
+// stack is used for Primitive dataTypes   (here we change the values in the copy)
+let fName = "Kapil"
+let lName= fName
+lName="Sachin"
+console.log(fName);
+console.log(lName);
+
+// Heap is used for non-Primitive dataTypes   (here we change the actual values of data)
+let class2 = {name:"hello", mail:"kkk@gmail.com"}
+let class3= class2
+class3={name:"HLWO", mail:"yyy@gmail.com"}
+console.log(class2);
+console.log(class3);
